@@ -1,0 +1,15 @@
+<div class="todo-item">
+  <div class="row">
+    <div class="col-md-9">
+<div class="ms-2">
+  <h3><i class="bi bi-{{index+1}}-square"></i></h3>
+  <h5 [ngClass]="{'strike':!todo.active}">Title: {{todo.title}}</h5>
+  <p  [ngClass]="{'strike':!todo.active}">Description: {{todo.desc}}</p>
+</div>
+    </div>
+    <div class="col-md-3 " style="display: flex;flex-direction: row;align-items: center;justify-content: end;">
+      <button class="btn btn-success m-2 py-3 " (click)="onDone(index)"><i class="bi bi-check"></i></button>
+      <button class="btn btn-danger m-2 py-3" (click)="onDelete(index)"><i class="bi bi-trash"></i></button>
+    </div>
+  </div>
+</div>

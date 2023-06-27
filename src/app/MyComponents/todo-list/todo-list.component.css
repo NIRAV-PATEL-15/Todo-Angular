@@ -1,0 +1,10 @@
+.todo-list {
+
+  margin: 4px, 4px;
+  padding: 4px;
+  height: 600px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+}

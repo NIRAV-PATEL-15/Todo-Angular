@@ -1,0 +1,23 @@
+<div>
+<form (ngSubmit)="onSubmit()">
+    <div class="container">
+<div class="row mt-2">
+  <div class="col">
+    <h5 for="title">Title</h5>
+    <input type="text" [(ngModel)]="title" id="title" name="title" class="form-control">
+  </div>
+  </div>
+  <div class="row mt-2">
+
+    <div class="col"
+    ><h5 for="desc">Description</h5>
+    <input type="text" id="desc" name="desc" [(ngModel)]="desc" class="form-control"></div>
+  </div>
+  <div class="col-md-3 mt-3 "><button class="btn btn-success-outline w-50" style="background-color: #C1D0B5;">Add</button></div>
+
+</div>
+
+
+  </form>
+
+  </div>
